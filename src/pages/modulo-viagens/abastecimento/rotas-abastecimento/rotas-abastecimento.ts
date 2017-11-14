@@ -60,6 +60,9 @@ export class RotasAbastecimentoPage {
   }
 
   mostrar(){
+    
+    this.foto.getFoto().then
+
     if (this.contador == 3 ){
       this.fotoBomba1 = this.foto.ultimaFoto;
       console.log(this.fotoBomba1);

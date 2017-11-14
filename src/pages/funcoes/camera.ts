@@ -12,6 +12,13 @@ export class FotoServico {
 
     getFoto(type)  {
 
+        return new Promise((resolve, reject) => {
+            setTimeout(function() {
+                console.log("depois de 3 segundos")
+            }, 3000);
+
+        });
+
         const options: CameraOptions = {
             quality: 100,
             destinationType: this.camera.DestinationType.DATA_URL,
