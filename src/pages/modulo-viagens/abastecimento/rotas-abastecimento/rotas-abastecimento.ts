@@ -61,7 +61,7 @@ export class RotasAbastecimentoPage {
 
   mostrar(){
     
-  this.foto.getFoto()
+  this.foto.getFoto('picture')
      
       .then(responses => {
         if (this.contador == 3 ){
