@@ -61,15 +61,18 @@ export class RotasAbastecimentoPage {
 
   mostrar(){
     
-    this.foto.getFoto().then
-
-    if (this.contador == 3 ){
-      this.fotoBomba1 = this.foto.ultimaFoto;
-      console.log(this.fotoBomba1);
-    }
-    if (this.contador == 4){
-      this.fotoBomba2 = this.foto.ultimaFoto;
-      console.log("bomba 2");
-    }
+  this.foto.getFoto()
+     
+      .then(responses => {
+        if (this.contador == 3 ){
+          this.fotoBomba1 = this.foto.ultimaFoto;
+            console.log(this.fotoBomba1);
+          }
+        if (this.contador == 4){
+          this.fotoBomba2 = this.foto.ultimaFoto;
+            console.log("bomba 2");
+      }
+    })
+    
   }
 }
