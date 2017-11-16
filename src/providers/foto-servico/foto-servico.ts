@@ -29,16 +29,13 @@ export class FotoServicoProvider {
                 
                         this.camera.getPicture(options).then((imageData) => {
                 
-                            this.ultimaFoto = Date();
+                            this.ultimaFoto = 'data:image/jpeg;base64,' + imageData;
         
                             resolve(this.ultimaFoto);
-                            console.log(this.ultimaFoto);
         
                         }, (err) => {
                             
-                            reject('Erro na última foto')
-                            console.log('errado'+ Date());
-                        
+                            reject('Erro na última foto');
                         });
         
                 });
