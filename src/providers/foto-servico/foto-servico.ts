@@ -35,7 +35,7 @@ export class FotoServicoProvider {
         
                         }, (err) => {
                             
-                            reject('Erro na última foto');
+                            reject(err); 
                         });
         
                 });
